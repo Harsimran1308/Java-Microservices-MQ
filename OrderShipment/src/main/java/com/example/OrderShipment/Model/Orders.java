@@ -1,9 +1,11 @@
 package com.example.OrderShipment.Model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
+import org.springframework.context.annotation.Bean;
 
 import java.util.Date;
 
@@ -13,7 +15,8 @@ import java.util.Date;
 public class Orders {
 
     @Id
-    private int id;
+    @GeneratedValue
+    private Long id;
     private String order_name;
     private String order_category;
     private String shipping_date;

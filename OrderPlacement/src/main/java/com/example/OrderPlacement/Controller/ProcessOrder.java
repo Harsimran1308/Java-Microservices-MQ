@@ -11,7 +11,8 @@ import java.util.List;
 public class ProcessOrder {
 
     @PostMapping("/placeOrder")
-    public ResponseEntity<String> placeOrder() {
+    public ResponseEntity<String> placeOrder(@RequestBody OrderDetails orderDetail) {
+
         return new ResponseEntity<>("Order Placed", HttpStatus.OK);
     }
 
