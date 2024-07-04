@@ -7,7 +7,6 @@ import java.util.Date;
 public class OrderDetails {
     private String order_name;
     private String order_category;
-    private Date order_date;
     private String user_name;
     private String user_id;
     private String vendor_name;
@@ -27,14 +26,6 @@ public class OrderDetails {
 
     public void setOrder_category(String order_category) {
         this.order_category = order_category;
-    }
-
-    public Date getOrder_date() {
-        return order_date;
-    }
-
-    public void setOrder_date(Date order_date) {
-        this.order_date = order_date;
     }
 
     public String getUser_name() {
