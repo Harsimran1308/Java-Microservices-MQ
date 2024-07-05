@@ -8,6 +8,6 @@ public class EventListener {
 
     @JmsListener(destination = "DEV.QUEUE.1")
     public void listen(String message) {
-        System.out.println("Ship Order");
+        System.out.println(message);
     }
 }
